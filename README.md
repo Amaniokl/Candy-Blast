@@ -5,7 +5,6 @@ A visually appealing and interactive Candy Crush clone built with **React**. Mat
 ## Features
 - Drag-and-drop functionality for swapping candies.
 - Dynamic game board with animations.
-- Real-time score updates.
 - Fully responsive design for all screen sizes.
 
 ---
