@@ -27,6 +27,27 @@ export const isColumnOfFour = (
     }
 };
 
+export const checkForColumnOfThree = (
+    newBoard: String[],
+    boardSize: number,
+    formulaForColumnOfThree: number
+  ) => {
+    for (let i = 0; i <= formulaForColumnOfThree; i++) {
+      const columnOfThree = [i, i + boardSize, i + boardSize * 2];
+      const decidedColor = newBoard[i];
+      const isBlank = newBoard[i] === "";
+  
+      if (
+        columnOfThree.every(
+          (square) => newBoard[square] === decidedColor && !isBlank
+        )
+      ) {
+        columnOfThree.forEach((square) => (newBoard[square] = ""));
+        return true;
+      }
+    }
+  };
+
 export const isColumnOfThree = (
     newBoard: string[],
     boardSize: number,

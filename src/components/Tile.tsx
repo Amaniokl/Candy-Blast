@@ -1,8 +1,12 @@
+// import React from 'react';
 import React from 'react';
+import { useAppDispatch } from '../store/hooks';
+import { dragStart, dragDrop, dragEnd } from '../store';
 
 function Tile({candy, candyId}: {
     candy: string, 
     candyId:number}){
+        const dispatch=useAppDispatch();
         return <div className='h-24 w-24 flex justify-center items-center m-0.5 rounded-lg select none'
         style={{ 
             boxShadow: "inset 5px 5px 15px #062525, inset -5px -5px 15px #aaaab" 
@@ -18,7 +22,6 @@ function Tile({candy, candyId}: {
             onDragLeave={(e) => e.preventDefault()}
             onDrop={(e) => dispatch(dragDrop(e.target))}
             onDragEnd={() => dispatch(dragEnd())}
-            candy-id={candyId}
             />
         }</div>
     }
