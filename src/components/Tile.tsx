@@ -10,7 +10,16 @@ function Tile({candy, candyId}: {
         >{
             candy && <img src={candy} alt="candy"
             className="h-20 w-20"
-            candy-id={candyId}/>
+            candy-id={candyId}
+            draggable={true}
+            onDragStart={(e) => dispatch(dragStart(e.target))}
+            onDragOver={(e) => e.preventDefault()}
+            onDragEnter={(e) => e.preventDefault()}
+            onDragLeave={(e) => e.preventDefault()}
+            onDrop={(e) => dispatch(dragDrop(e.target))}
+            onDragEnd={() => dispatch(dragEnd())}
+            candy-id={candyId}
+            />
         }</div>
     }
 export default Tile;

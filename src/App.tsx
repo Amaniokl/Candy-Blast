@@ -3,7 +3,7 @@ import { createBoard } from "./utils/createBoard";
 import { useAppDispatch, useAppSelector } from "./store/hooks";
 import Board from "./components/Board";
 import Tile from "./components/Tile";
-import { updateBoard } from "./store";
+import { moveBelow, updateBoard } from "./store";
 import { checkForRowOfFour, checkForRowOfThree, isColumnOfFour, isColumnOfThree } from "./utils/moveCheckLogic";
 import { formulaForColumnOfFour, formulaForColumnOfThree, generateInvalidMoves } from "./utils/formulas";
 // import isRowOfFour
@@ -42,7 +42,7 @@ function App() {
         generateInvalidMoves(boardSize)
       );
       dispatch(updateBoard(newBoard));
-
+      dispatch(moveBelow());
     }, 150);
     return () => clearInterval(timeout)
   }, [board, boardSize, dispatch]);
