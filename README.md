@@ -1,4 +1,29 @@
-# Getting Started with Create React App
+# Candy Crush Clone
+
+A visually appealing and interactive Candy Crush clone built with **React**. Match candies, score points, and enjoy the colorful gameplay experience!
+
+## Features
+- Drag-and-drop functionality for swapping candies.
+- Dynamic game board with animations.
+- Real-time score updates.
+- Fully responsive design for all screen sizes.
+
+---
+
+## Getting Started
+
+Follow these instructions to set up and run the project locally.
+
+### Prerequisites
+Make sure you have the following installed on your system:
+- [Node.js](https://nodejs.org/) (version 14.x or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/candy-crush-clone.git
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
