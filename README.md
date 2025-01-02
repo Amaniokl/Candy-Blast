@@ -1,6 +1,6 @@
 # Candy Crush Clone
 
-A visually appealing and interactive Candy Crush clone built with **React**. Match candies, score points, and enjoy the colorful gameplay experience!
+A visually appealing and interactive Candy Crush clone built with **React**. Match candies, score points, and enjoy the colorful gameplay experience
 
 ## Features
 - Drag-and-drop functionality for swapping candies.
